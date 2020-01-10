@@ -1,0 +1,74 @@
+<!--
+ * @Author: Leland
+ * @Date: 2020-01-07 15:44:39
+ * @Description: Description
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{padding:0;margin:0;}
+    .btn {
+      height: 46px;
+      background: #F33446;
+      border-radius: 25px;
+      border: 2px solid #F33446;
+      padding: 0;
+      line-height: 46px;
+      overflow: hidden;
+      float: left;
+    }
+      .btn span {
+        float: left;
+        padding: 0 10px;
+        color: #fff;
+      }
+      .btn .btn_inner {
+        position: relative;
+        height: 46px;
+        border: none;
+        color: #333;
+        overflow: hidden;
+      }
+        
+      .btn .btn_inner:after {
+          content:'';
+          width: 100%;
+          background-color: #fff;
+          display: block;
+          height: 46px;
+          line-height: 46px;
+          position: absolute;
+          right:0;
+          left: 11px;
+          bottom:0;
+          top: 0;
+          transform: skewX(-20deg);
+        }
+
+      .btn .btn_inner strong {
+        position: relative;
+        display: block;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 6px;
+        top:0px;
+        z-index: 999;
+        font-size: 20px;
+        padding-left: 20px;
+      }
+  </style>
+</head>
+<body>
+  <div class="btn">
+    <span>抢购价</span>
+    <div class="btn_inner">
+      <strong>2399239.90</strong>
+    </div>
+  </div>
+</body>
+</html>
